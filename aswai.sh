@@ -39,7 +39,7 @@ tar -xf "$TARBALLNAME"
 
 cd "$TARGETPKG"
 
-makepkg
+sudo -u $SUDO_USER makepkg
 
 MADEPKG="`ls -1 | grep '\.pkg\.tar\.xz$'`"
 
